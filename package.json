@@ -1,0 +1,37 @@
+{
+  "name": "JeyKee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://JeyKee.github.io/hints",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html",
+    "predeploy": "npm run build -- --public-url /hints/",
+    "deploy": "gh-pages -d dist",
+    "startNash": "parcel src/*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeyKee/hints.git"
+  },
+  "keywords": [],
+  "author": "Torkotiuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeyKee/hints/issues"
+    
+  },
+  "devDependencies": {
+    "@pnotify/core": "^5.2.0",
+    "gh-pages": "^3.1.0",
+    "marked": "^2.1.3",
+    "parcel-bundler": "1.12.3",
+    "posthtml-include": "^1.7.1",
+    "prettier": "^2.2.1",
+    "sass": "^1.39.0"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
